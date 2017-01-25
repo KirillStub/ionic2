@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item (click)="goTo('signup')">Sign Up</button>
+    <button ion-item (click)="goTo('signin')">Sign In</button>
+    <ion-item>
+      <h2 (click)="ShowToken()">Show token</h2>
+    </ion-item>
+    <ion-item>
+      <h2 (click)="Logout()">Logout</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
