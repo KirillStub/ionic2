@@ -6,16 +6,13 @@ import { Session } from '../../core/session.service'
 
 @Component({
   selector: 'home',
-  templateUrl: 'home.html',
-  providers: [Session]
+  templateUrl: 'home.html'
 })
 export class HomePage {
-  token:string;
 
   constructor(private navCtrl:NavController,
               private session:Session,
               private alertCtrl:AlertController) {
-    this.token = session.getToken();
   }
 
   goTo(page:string) {
